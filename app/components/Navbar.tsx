@@ -1,8 +1,11 @@
 "use client";
 
+
 import Image from "next/image";
 import { useState } from "react";
 import { FiMenu, FiX, FiSearch } from "react-icons/fi";
+import { useSelector } from "react-redux";
+import { RootState } from "../redux/store/store";
 
 interface NavItem {
     label: string;
@@ -11,7 +14,8 @@ interface NavItem {
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
-
+    const cart = useSelector((state: RootState) => state.product);
+    console.log(cart);
     const navItems: NavItem[] = [
         { label: "About Us", link: "#" },
         { label: "Contact Us", link: "#" },
@@ -48,7 +52,7 @@ export default function Navbar() {
                 <span className="hidden lg:flex items-center gap-5">
                     <span className="text-sm ">1-800-632-6120</span>
                     <span className="bg-[whitesmoke] p-4 rounded-full">
-                        <FiSearch size={17} color="black"/>
+                        <FiSearch size={17} color="black" />
                     </span>
                 </span>
 

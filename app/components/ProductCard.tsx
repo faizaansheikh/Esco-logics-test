@@ -1,6 +1,14 @@
 
+"use client";
 import { CiHeart } from "react-icons/ci";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/slices/products";
 const ProductCard = ({ product }: any) => {
+    const dispatch = useDispatch();
+
+    const handleAddToCart = () => {
+        dispatch(addToCart(product));
+    };
     return (
         <div className=" rounded-2xl   relative hover:shadow-md transition pb-4 flex flex-col h-full ">
             <div className="bg-gray-100 p-4 rounded-lg">
@@ -36,7 +44,7 @@ const ProductCard = ({ product }: any) => {
                     {product.priceMax.toLocaleString()}
                 </p>
                 <div className="flex gap-3">
-                    <button className="flex-1 bg-[#FFA240] hover:bg-orange-600 text-white py-3 rounded-full text-sm cursor-pointer transition-all duration-500">
+                    <button  onClick={handleAddToCart} className="flex-1 bg-[#FFA240] hover:bg-orange-600 text-white py-3 rounded-full text-sm cursor-pointer transition-all duration-500">
                         Add to Cart
                     </button>
                     <button className="flex-1 bg-gray-100 hover:bg-gray-200 text-gray-700 py-3 rounded-full text-sm cursor-pointer transition-all duration-500">
