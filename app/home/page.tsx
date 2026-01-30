@@ -12,7 +12,7 @@ export default function HomePage() {
         <KeyCharacteristics/>
         <ExampleApplications/>
         <Products/>
-        <Footer/>
+    
    </div>
   );
 }

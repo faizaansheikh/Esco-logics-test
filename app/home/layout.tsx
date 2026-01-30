@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 function layout({
     children,
 }: Readonly<{
@@ -16,6 +17,7 @@ function layout({
             <div>
                 {children}
             </div>
+            <Footer />
         </div>
     )
 }

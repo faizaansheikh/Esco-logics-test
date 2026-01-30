@@ -5,8 +5,6 @@ export default function Hero() {
     return (
         <section className="w-full bg-[#f7f7f7]">
             <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-                {/* Left Content */}
                 <div>
                     <p className="text-xs font-semibold text-orange-500 mb-2">
                         PRODUCTS / PARTITION AND CAGES
@@ -24,8 +22,6 @@ export default function Hero() {
                     <XButton label="View Products"/>
                     
                 </div>
-
-                {/* Right Image */}
                 <div className="relative ml-3 md:ml-6 w-full h-[300px] md:h-[400px]">
                     <Image
                         src="/hero2.png" 
