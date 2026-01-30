@@ -10,7 +10,7 @@ const ProductCard = ({ product }: any) => {
         dispatch(addToCart(product));
     };
     return (
-        <div className=" rounded-2xl   relative hover:shadow-md transition pb-4 flex flex-col h-full ">
+        <div className=" rounded-2xl   relative hover:shadow-md transition pb-6 flex flex-col h-full ">
             <div className="bg-gray-100 p-4 rounded-lg">
                 {product.featured && (
                     <span className="absolute top-4 left-[-5] shadow bg-[#FFA240] text-white text-xs px-4 py-1 rounded-r-full">

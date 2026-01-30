@@ -31,4 +31,37 @@ export const products = [
     image: '/products/p4.png',
     featured: true,
   },
+
+    {
+    id: 5,
+    title: '36" and 48" Wide 5-S Storage Cabinets',
+    priceMin: 1523.66,
+    priceMax: 1544.67,
+    image: '/products/p3.png',
+    featured: true,
+  },
+  {
+    id: 6,
+    title: '36" Small Parts Storage and Security Cabinets',
+    priceMin: 1933.93,
+    priceMax: 2180.76,
+    image: '/products/p1.png',
+    featured: true,
+  },
+  {
+    id: 7,
+    title: 'Adjustable Spring Safety Gate',
+    priceMin: 159.91,
+    priceMax: 199.55,
+    image: '/products/p4.png',
+    featured: true,
+  },
+  {
+    id: 8,
+    title: 'All Welded Heavy Duty Gear Lockers',
+    priceMin: 534.61,
+    priceMax: 1172.86,
+    image: '/products/p2.png',
+    featured: true,
+  },
 ];
